@@ -3,5 +3,5 @@ export {
   postTodo,
   deleteTodo,
   toggleTodo,
-  getTodo
+  getTodo,
 } from './todo';

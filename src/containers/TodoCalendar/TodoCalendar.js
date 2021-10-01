@@ -9,6 +9,7 @@ import Calendar from '../../components/Calendar/Calendar';
 import * as actionCreators from '../../store/actions/index';
 
 import './TodoCalendar.css';
+import { handleClickPrev } from '../../store/actions/todo';
 
 class TodoCalendar extends Component {
   state = {
@@ -63,7 +64,8 @@ const mapDispatchToProps = dispatch => {
     onToggleTodo: (id) =>
       dispatch(actionCreators.toggleTodo(id)),
     onGetAll: () =>
-      dispatch(actionCreators.getTodos())
+      dispatch(actionCreators.getTodos()),
+
   }
 }
 
